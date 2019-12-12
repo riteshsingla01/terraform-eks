@@ -15,7 +15,7 @@ pipeline {
     ansiColor('xterm')
   }
 
-  agent { label 'master' }
+  agent any
 
   stages {
 
