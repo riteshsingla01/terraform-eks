@@ -15,8 +15,12 @@ pipeline {
     ansiColor('xterm')
   }
 
-  agent any
-
+  agent {
+    node {
+      label 'master'
+    }  
+  }
+   
   stages {
 
     stage('Setup') {
