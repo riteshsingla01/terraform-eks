@@ -5,7 +5,7 @@ pipeline {
     string(name: 'cluster', defaultValue : 'alsac-eks', description: "EKS cluster name;eg demo creates cluster named eks-demo.")
     string(name: 'vpc_name', defaultValue : '', description: "k8s worker node instance type.")
     string(name: 'instance_type', defaultValue : 't2.micro', description: "k8s worker node instance type.")
-    string(name: 'credential', defaultValue : 'jenkins', description: "Jenkins credential that provides the AWS access key and secret.")
+    string(name: 'credential', defaultValue : 'awscredentials', description: "Jenkins credential that provides the AWS access key and secret.")
     string(name: 'region', defaultValue : 'us-east-1', description: "AWS region.")
   }
 
